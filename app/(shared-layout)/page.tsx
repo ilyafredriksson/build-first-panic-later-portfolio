@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -9,6 +10,19 @@ export default function Home() {
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(99,102,241,0.2),transparent_50%)]" />
 
         <div className="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
+          <div className="mb-6 flex justify-center">
+            <div className="rounded-full border border-primary/30 p-1 shadow-xl shadow-primary/20">
+              <Image
+                src="/Sk%C3%A4rmbild%202025-09-23%20100523.png"
+                alt="Ilya Fredriksson"
+                width={240}
+                height={240}
+                className="size-44 rounded-full object-cover sm:size-56"
+                priority
+              />
+            </div>
+          </div>
+
           <p className="mb-4 inline-flex rounded-full border border-primary/30 bg-primary/10 px-4 py-1 text-xs font-medium tracking-wide text-primary">
             FRONTEND • WEBBSÄKERHET • REACT/NEXT.JS
           </p>
@@ -25,14 +39,14 @@ export default function Home() {
           </p>
 
           <div className="mt-5 flex flex-wrap items-center justify-center gap-2 text-xs">
-            <span className="rounded-full border px-3 py-1 text-muted-foreground">Järfälla</span>
+            <span className="rounded-full border px-3 py-1 text-muted-foreground">Webbutveckling</span>
             <span className="rounded-full border px-3 py-1 text-muted-foreground">Svenska / Engelska / Ryska</span>
             <span className="rounded-full border px-3 py-1 text-muted-foreground">Tillgänglig för nya uppdrag</span>
           </div>
 
           <div className="mx-auto mt-4 grid max-w-3xl gap-2 text-left text-sm sm:grid-cols-3">
             <p className="rounded-lg border px-3 py-2 text-muted-foreground"><strong className="text-foreground">Roll:</strong> Junior Frontend</p>
-            <p className="rounded-lg border px-3 py-2 text-muted-foreground"><strong className="text-foreground">Plats:</strong> Stockholm / Järfälla</p>
+            <p className="rounded-lg border px-3 py-2 text-muted-foreground"><strong className="text-foreground">Plats:</strong> Stockholm </p>
             <p className="rounded-lg border px-3 py-2 text-muted-foreground"><strong className="text-foreground">Arbetsform:</strong> Hybrid / Remote</p>
           </div>
 
