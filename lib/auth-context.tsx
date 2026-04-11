@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, useEffect, ReactNode } from "react";
+import { createContext, useContext, useState, ReactNode } from "react";
 
 interface AuthContextType {
   isAuthenticated: boolean;
@@ -13,13 +13,10 @@ const AuthContext = createContext<AuthContextType>({
 });
 
 export function AuthProvider({ children }: { children: ReactNode }) {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-
-  useEffect(() => {
-    // Check if user has session on mount
-    const hasSession = localStorage.getItem("auth-session") === "true";
-    setIsAuthenticated(hasSession);
-  }, []);
+  const [isAuthenticated, setIsAuthenticated] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return localStorage.getItem("auth-session") === "true";
+  });
 
   const setAuthenticated = (value: boolean) => {
     setIsAuthenticated(value);

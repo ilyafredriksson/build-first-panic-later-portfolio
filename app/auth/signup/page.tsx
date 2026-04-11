@@ -19,8 +19,8 @@ import { Loader2 } from "lucide-react";
 export default function SignUpPage() {
     const [isPending, startTransition] = useTransition();
     const router = useRouter();
-    const form = useForm({
-        resolver: zodResolver(SignUpSchema as any),
+    const form = useForm<z.infer<typeof SignUpSchema>>({
+        resolver: zodResolver(SignUpSchema),
         defaultValues: {
             name: "",
             email: "",
@@ -43,8 +43,9 @@ export default function SignUpPage() {
                     toast.success("Konto skapat. Logga in för att fortsätta.");
                     router.push("/auth/login");
                 }
-            } catch (error: any) {
-                toast.error(error?.message || "An unexpected error occurred");
+            } catch (error: unknown) {
+                const message = error instanceof Error ? error.message : "An unexpected error occurred";
+                toast.error(message);
             }
         });
     }

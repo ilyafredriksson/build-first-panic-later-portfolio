@@ -21,9 +21,9 @@ export default function LoginPage() {
     const router = useRouter();
     const { setAuthenticated } = useAuth();
     
-    const form = useForm({
+    const form = useForm<z.infer<typeof LoginSchema>>({
         mode: "onTouched",
-        resolver: zodResolver(LoginSchema as any),
+        resolver: zodResolver(LoginSchema),
         defaultValues: {
             email: "",
             password: ""
@@ -44,8 +44,9 @@ export default function LoginPage() {
                     toast.success("Logged in successfully!");
                     router.push("/");
                 }
-            } catch (error: any) {
-                toast.error(error?.message || "An unexpected error occurred");
+            } catch (error: unknown) {
+                const message = error instanceof Error ? error.message : "An unexpected error occurred";
+                toast.error(message);
             }
         });
     }

@@ -6,6 +6,6 @@ export const authClient = createAuthClient({
         ? window.location.origin
         : process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
     plugins:[
-        convexClient() as any
+        convexClient()
     ]
 })

@@ -27,7 +27,7 @@ export const createAuth = (ctx: GenericCtx<DataModel>) => {
     advanced: {
       disableCSRFCheck: true,
     }
-  }) as any;
+  });
 };
 
 

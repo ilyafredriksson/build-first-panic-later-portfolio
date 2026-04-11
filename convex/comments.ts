@@ -1,7 +1,6 @@
 import { mutation, query } from "./_generated/server"
 import { ConvexError, v } from "convex/values";
 import { authComponent } from "./auth";
-import { ConvexClient } from "convex/browser";
 
 
 export const getCommentsByPostId =query ({
