@@ -38,6 +38,24 @@ export default function Home() {
             struktur och säker autentisering.
           </p>
 
+          <div className="group relative mx-auto mt-5 max-w-xl overflow-hidden rounded-lg border border-sky-500/40 bg-gradient-to-r from-sky-500/20 via-cyan-500/10 to-transparent px-4 py-3 text-left shadow-lg shadow-sky-500/10 transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-500/60 hover:shadow-xl hover:shadow-sky-500/20 motion-safe:hover:scale-[1.01]">
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.2),transparent_45%)] opacity-70 transition-opacity duration-300 group-hover:opacity-100" />
+
+            <p className="relative inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-sky-600 dark:text-sky-400">
+              <span className="relative flex size-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-500/60" />
+                <span className="relative inline-flex size-2 rounded-full bg-sky-500" />
+              </span>
+              Om mig i korthet
+            </p>
+            <p className="relative mt-1 text-sm font-medium text-foreground/90">
+              Kod som teamet förstår, användarna gillar och angripare helst undviker.
+            </p>
+            <p className="relative mt-1 text-sm text-muted-foreground">
+              Frontend med fokus på användaren, prestandan och att slippa deploy-and-pray.
+            </p>
+          </div>
+
           <div className="mt-5 flex flex-wrap items-center justify-center gap-2 text-xs">
             <span className="rounded-full border px-3 py-1 text-muted-foreground">Webbutveckling</span>
             <span className="rounded-full border px-3 py-1 text-muted-foreground">Svenska / Engelska / Ryska</span>
