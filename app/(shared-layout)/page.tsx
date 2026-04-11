@@ -72,7 +72,7 @@ export default function Home() {
             <Link href="mailto:fredrikssonilya@gmail.com" className={buttonVariants({ size: "lg" })}>
               Kontakta mig
             </Link>
-            <Link href="/blog" className={buttonVariants({ variant: "outline", size: "lg" })}>
+            <Link href="#projects" className={buttonVariants({ variant: "outline", size: "lg" })}>
               Se projekt
             </Link>
             <Link
@@ -95,7 +95,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20">
+      <section id="projects" className="scroll-mt-24 py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8 rounded-2xl border border-primary/30 bg-primary/10 p-4 sm:p-5">
             <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
@@ -124,57 +124,30 @@ export default function Home() {
               <p className="text-sm font-medium text-primary">Utvalda projekt</p>
               <h2 className="mt-1 text-3xl font-bold tracking-tight">Projekt som visar min kompetens</h2>
             </div>
-            <Link href="/blog" className={buttonVariants({ variant: "ghost" })}>
+            <Link href="#projects" className={buttonVariants({ variant: "ghost" })}>
               Visa alla
             </Link>
           </div>
 
-          <div className="grid gap-5 md:grid-cols-3">
+          <div className="grid gap-5 md:grid-cols-2">
             <Card className="border-primary/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10">
               <CardHeader>
-                <CardTitle>Boka Catering</CardTitle>
+                <CardTitle>Realtime Blog Platform</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3 text-sm text-muted-foreground">
-                <p>Bokningswebb i Next.js + TypeScript med formulär, komponentstruktur och API-integration.</p>
+                <p>Fullstack blogg med auth, kommentarer och realtime-flöden byggd med Next.js och Convex.</p>
                 <div className="flex flex-wrap gap-2 text-xs">
                   <span className="rounded-full border px-2 py-1">Next.js</span>
-                  <span className="rounded-full border px-2 py-1">TypeScript</span>
-                  <span className="rounded-full border px-2 py-1">API</span>
-                </div>
-              </CardContent>
-              <CardFooter className="flex gap-2">
-                <Link href="/blog" className={buttonVariants({ className: "flex-1" })}>
-                  Öppna
-                </Link>
-                <Link
-                  href="https://github.com/ilyafredriksson"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={buttonVariants({ variant: "outline", className: "flex-1" })}
-                >
-                  Kod
-                </Link>
-              </CardFooter>
-            </Card>
-
-            <Card className="transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-              <CardHeader>
-                <CardTitle>Realtime Blog</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3 text-sm text-muted-foreground">
-                <p>Bloggplattform med kommentarer, presence och auth-flöden för modern frontend.</p>
-                <div className="flex flex-wrap gap-2 text-xs">
-                  <span className="rounded-full border px-2 py-1">React</span>
                   <span className="rounded-full border px-2 py-1">Convex</span>
                   <span className="rounded-full border px-2 py-1">Auth</span>
                 </div>
               </CardContent>
               <CardFooter className="flex gap-2">
-                <Link href="/blog" className={buttonVariants({ variant: "outline", className: "flex-1" })}>
-                  Utforska
+                <Link href="https://deploy-and-pray.vercel.app/" target="_blank" rel="noreferrer" className={buttonVariants({ className: "flex-1" })}>
+                  Live demo
                 </Link>
                 <Link
-                  href="https://github.com/ilyafredriksson"
+                  href="https://github.com/ilyafredriksson/deploy-and-pray"
                   target="_blank"
                   rel="noreferrer"
                   className={buttonVariants({ variant: "outline", className: "flex-1" })}
@@ -186,22 +159,76 @@ export default function Home() {
 
             <Card className="transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
               <CardHeader>
-                <CardTitle>Webbsäkerhet i praktik</CardTitle>
+                <CardTitle>Boka Catering</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3 text-sm text-muted-foreground">
-                <p>Praktiskt arbete med JWT, XSS/CSRF-grunder och säker API-hantering.</p>
+                <p>Booking-system för cateringservice från min LIA-period. Full-stack lösning med databas och användarhantering.</p>
                 <div className="flex flex-wrap gap-2 text-xs">
-                  <span className="rounded-full border px-2 py-1">JWT</span>
-                  <span className="rounded-full border px-2 py-1">XSS/CSRF</span>
-                  <span className="rounded-full border px-2 py-1">HTTPS</span>
+                  <span className="rounded-full border px-2 py-1">HTML/CSS</span>
+                  <span className="rounded-full border px-2 py-1">JavaScript</span>
+                  <span className="rounded-full border px-2 py-1">PHP/MySQL</span>
                 </div>
               </CardContent>
               <CardFooter className="flex gap-2">
-                <Link href="/blog" className={buttonVariants({ variant: "outline", className: "flex-1" })}>
-                  Läs mer
+                <Link href="https://github.com/ilyafredriksson/boka-catering" target="_blank" rel="noreferrer" className={buttonVariants({ variant: "outline", className: "flex-1" })}>
+                  Visa projekt
                 </Link>
                 <Link
-                  href="https://github.com/ilyafredriksson"
+                  href="https://github.com/ilyafredriksson/boka-catering"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={buttonVariants({ variant: "outline", className: "flex-1" })}
+                >
+                  Kod
+                </Link>
+              </CardFooter>
+            </Card>
+
+            <Card className="transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle>React Crypto App</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3 text-sm text-muted-foreground">
+                <p>Crypto dashboard i React med API-data, filtrering och tydlig visualisering av marknadsdata.</p>
+                <div className="flex flex-wrap gap-2 text-xs">
+                  <span className="rounded-full border px-2 py-1">React</span>
+                  <span className="rounded-full border px-2 py-1">API</span>
+                  <span className="rounded-full border px-2 py-1">State Management</span>
+                </div>
+              </CardContent>
+              <CardFooter className="flex gap-2">
+                <Link href="https://github.com/ilyafredriksson/react-crypto-app" target="_blank" rel="noreferrer" className={buttonVariants({ variant: "outline", className: "flex-1" })}>
+                  Visa projekt
+                </Link>
+                <Link
+                  href="https://github.com/ilyafredriksson/react-crypto-app"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={buttonVariants({ variant: "outline", className: "flex-1" })}
+                >
+                  Kod
+                </Link>
+              </CardFooter>
+            </Card>
+
+            <Card className="transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle>QR Generator</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3 text-sm text-muted-foreground">
+                <p>Snabb utility-app för att generera QR-koder med fokus på enkel UX och ren frontendstruktur.</p>
+                <div className="flex flex-wrap gap-2 text-xs">
+                  <span className="rounded-full border px-2 py-1">JavaScript</span>
+                  <span className="rounded-full border px-2 py-1">CSS</span>
+                  <span className="rounded-full border px-2 py-1">UI</span>
+                </div>
+              </CardContent>
+              <CardFooter className="flex gap-2">
+                <Link href="https://github.com/ilyafredriksson/QRGenerator" target="_blank" rel="noreferrer" className={buttonVariants({ variant: "outline", className: "flex-1" })}>
+                  Visa projekt
+                </Link>
+                <Link
+                  href="https://github.com/ilyafredriksson/QRGenerator"
                   target="_blank"
                   rel="noreferrer"
                   className={buttonVariants({ variant: "outline", className: "flex-1" })}
@@ -309,7 +336,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pb-24">
+      <section id="about" className="scroll-mt-24 pb-24">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6 lg:grid-cols-3">
             <div className="rounded-2xl border bg-card p-6 shadow-sm lg:col-span-2">
@@ -369,7 +396,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="rounded-2xl border bg-card p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <div id="contact" className="scroll-mt-24 rounded-2xl border bg-card p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
               <p className="text-sm font-medium text-primary">Kontakt</p>
               <h3 className="mt-2 text-xl font-bold tracking-tight">Tillgänglig för jobb</h3>
               <p className="mt-3 text-sm text-muted-foreground">
