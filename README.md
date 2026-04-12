@@ -51,3 +51,5 @@ pnpm run build
 - Email: fredrikssonilya@gmail.com
 - LinkedIn: https://www.linkedin.com/in/ilya-fredriksson-197313353/
 - GitHub: https://github.com/ilyafredriksson
+- CV: /Ilya-Fredriksson-CV.pdf
+- Personligt brev: /Personligt-Brev-Ilya-Fredriksson-2026.pdf

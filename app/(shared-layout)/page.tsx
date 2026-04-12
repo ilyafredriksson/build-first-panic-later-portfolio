@@ -75,6 +75,9 @@ export default function Home() {
             <Link href="/Ilya-Fredriksson-CV.pdf" className={buttonVariants({ variant: "outline", size: "lg" })} target="_blank" rel="noreferrer">
               Ladda ner CV
             </Link>
+            <Link href="/Personligt-Brev-Ilya-Fredriksson-2026.pdf" className={buttonVariants({ variant: "outline", size: "lg" })} target="_blank" rel="noreferrer">
+              Personligt brev
+            </Link>
             <Link href="#projects" className={buttonVariants({ variant: "outline", size: "lg" })}>
               Se projekt
             </Link>
@@ -448,6 +451,14 @@ export default function Home() {
                 >
                   Ladda ner CV
                 </Link>
+                <Link
+                  href="/Personligt-Brev-Ilya-Fredriksson-2026.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={buttonVariants({ variant: "outline", className: "w-full" })}
+                >
+                  Personligt brev
+                </Link>
               </div>
             </div>
           </div>
@@ -469,6 +480,9 @@ export default function Home() {
             </Link>
             <Link href="/Ilya-Fredriksson-CV.pdf" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors duration-200">
               CV
+            </Link>
+            <Link href="/Personligt-Brev-Ilya-Fredriksson-2026.pdf" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors duration-200">
+              Personligt brev
             </Link>
           </div>
         </div>
