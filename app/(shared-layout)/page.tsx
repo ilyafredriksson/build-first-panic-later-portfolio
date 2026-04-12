@@ -72,6 +72,9 @@ export default function Home() {
             <Link href="mailto:fredrikssonilya@gmail.com" className={buttonVariants({ size: "lg" })}>
               Kontakta mig
             </Link>
+            <Link href="/Ilya-Fredriksson-CV.pdf" className={buttonVariants({ variant: "outline", size: "lg" })} target="_blank" rel="noreferrer">
+              Ladda ner CV
+            </Link>
             <Link href="#projects" className={buttonVariants({ variant: "outline", size: "lg" })}>
               Se projekt
             </Link>
@@ -437,6 +440,14 @@ export default function Home() {
                 >
                   LinkedIn
                 </Link>
+                <Link
+                  href="/Ilya-Fredriksson-CV.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={buttonVariants({ variant: "outline", className: "w-full" })}
+                >
+                  Ladda ner CV
+                </Link>
               </div>
             </div>
           </div>
@@ -455,6 +466,9 @@ export default function Home() {
             </Link>
             <Link href="mailto:fredrikssonilya@gmail.com" className="hover:text-foreground transition-colors duration-200">
               E-post
+            </Link>
+            <Link href="/Ilya-Fredriksson-CV.pdf" target="_blank" rel="noreferrer" className="hover:text-foreground transition-colors duration-200">
+              CV
             </Link>
           </div>
         </div>

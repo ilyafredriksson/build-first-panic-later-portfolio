@@ -17,8 +17,34 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://deploy-and-pray.vercel.app"),
   title: "Ilya Fredriksson • Frontend Developer • React/Next.js",
   description: "Portfolio showcasing frontend projects with focus on React, Next.js, web security and modern web development. Available for new opportunities.",
+  openGraph: {
+    title: "Ilya Fredriksson • Frontend Developer",
+    description: "Portfolio with selected React/Next.js projects, frontend craftsmanship, and web security focus.",
+    url: "https://deploy-and-pray.vercel.app",
+    siteName: "Ilya Frontend Portfolio",
+    locale: "sv_SE",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.svg",
+        width: 1200,
+        height: 630,
+        alt: "Ilya Fredriksson Frontend Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ilya Fredriksson • Frontend Developer",
+    description: "React/Next.js portfolio with focus on frontend quality and web security.",
+    images: ["/og-image.svg"],
+  },
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({
