@@ -69,21 +69,21 @@ export default function Home() {
           </div>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
-            <Link href="mailto:fredrikssonilya@gmail.com" className={buttonVariants({ size: "lg" })}>
+            <Link href="mailto:fredrikssonilya@gmail.com" className={buttonVariants({ size: "lg", className: "w-full sm:w-auto" })}>
               Kontakta mig
             </Link>
-            <Link href="/Ilya-Fredriksson-CV.pdf" className={buttonVariants({ variant: "outline", size: "lg" })} target="_blank" rel="noreferrer">
+            <Link href="/Ilya-Fredriksson-CV.pdf" className={buttonVariants({ variant: "outline", size: "lg", className: "w-full sm:w-auto" })} target="_blank" rel="noreferrer">
               Ladda ner CV
             </Link>
-            <Link href="/Personligt-Brev-Ilya-Fredriksson-2026.pdf" className={buttonVariants({ variant: "outline", size: "lg" })} target="_blank" rel="noreferrer">
+            <Link href="/Personligt-Brev-Ilya-Fredriksson-2026.pdf" className={buttonVariants({ variant: "outline", size: "lg", className: "w-full sm:w-auto" })} target="_blank" rel="noreferrer">
               Personligt brev
             </Link>
-            <Link href="#projects" className={buttonVariants({ variant: "outline", size: "lg" })}>
+            <Link href="#projects" className={buttonVariants({ variant: "outline", size: "lg", className: "w-full sm:w-auto" })}>
               Se projekt
             </Link>
             <Link
               href="https://github.com/ilyafredriksson"
-              className={buttonVariants({ variant: "outline", size: "lg" })}
+              className={buttonVariants({ variant: "outline", size: "lg", className: "w-full sm:w-auto" })}
               target="_blank"
               rel="noreferrer"
             >
@@ -91,7 +91,7 @@ export default function Home() {
             </Link>
             <Link
               href="https://www.linkedin.com/in/ilya-fredriksson-197313353/"
-              className={buttonVariants({ variant: "outline", size: "lg" })}
+              className={buttonVariants({ variant: "outline", size: "lg", className: "w-full sm:w-auto" })}
               target="_blank"
               rel="noreferrer"
             >

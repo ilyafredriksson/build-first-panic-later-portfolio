@@ -20,6 +20,13 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://deploy-and-pray.vercel.app"),
   title: "Ilya Fredriksson • Frontend Developer • React/Next.js",
   description: "Portfolio showcasing frontend projects with focus on React, Next.js, web security and modern web development. Available for new opportunities.",
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     title: "Ilya Fredriksson • Frontend Developer",
     description: "Portfolio with selected React/Next.js projects, frontend craftsmanship, and web security focus.",
@@ -53,7 +60,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="sv" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
