@@ -8,12 +8,16 @@ export function Navbar() {
     return (
         <nav className="w-full py-5 flex items-center justify-between">
             <div className="flex items-center gap-6">
-               
+                <Link href="#" className="font-semibold tracking-tight text-foreground">
+                    Ilya Portfolio
+                </Link>
 
                 <div className="hidden items-center gap-2 sm:flex">
+                    <Link className={buttonVariants({ variant: "ghost" })} href="#projects">Projekt</Link>
                     <Link className={buttonVariants({ variant: "ghost" })} href="#about">Om mig</Link>
                     
                     <Link className={buttonVariants({ variant: "ghost" })} href="#contact">Kontakt</Link>
+                    <Link className={buttonVariants({ variant: "ghost" })} href="/Ilya-Fredriksson-CV.pdf" target="_blank" rel="noreferrer">CV</Link>
                 </div>
             </div>
 

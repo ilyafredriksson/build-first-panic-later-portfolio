@@ -13,7 +13,7 @@ export default function Home() {
           <div className="mb-6 flex justify-center">
             <div className="rounded-full border border-primary/30 p-1 shadow-xl shadow-primary/20">
               <Image
-                src="/Sk%C3%A4rmbild%202025-09-23%20100523.png"
+                src="/profile.png"
                 alt="Ilya Fredriksson"
                 width={240}
                 height={240}
@@ -37,6 +37,22 @@ export default function Home() {
             webbsäkerhet. Jag bygger användarvänliga gränssnitt med tydlig
             struktur och säker autentisering.
           </p>
+
+          <div className="mx-auto mt-6 max-w-3xl rounded-2xl border border-primary/30 bg-primary/10 p-4 sm:p-5">
+            <p className="text-xs font-medium uppercase tracking-wide text-primary">Snabb ansökan</p>
+            <p className="mt-1 text-sm text-foreground/90">För rekryterare: ladda ner CV och personligt brev direkt, eller kontakta mig på mejl.</p>
+            <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
+              <Link href="/Ilya-Fredriksson-CV.pdf" target="_blank" rel="noreferrer" className={buttonVariants({ className: "w-full sm:w-auto" })}>
+                CV (PDF)
+              </Link>
+              <Link href="/Personligt-Brev-Ilya-Fredriksson-2026.pdf" target="_blank" rel="noreferrer" className={buttonVariants({ variant: "outline", className: "w-full sm:w-auto" })}>
+                Personligt brev (PDF)
+              </Link>
+              <Link href="mailto:fredrikssonilya@gmail.com" className={buttonVariants({ variant: "outline", className: "w-full sm:w-auto" })}>
+                Kontakta mig
+              </Link>
+            </div>
+          </div>
 
           <div className="group relative mx-auto mt-5 max-w-xl overflow-hidden rounded-lg border border-sky-500/40 bg-gradient-to-r from-sky-500/20 via-cyan-500/10 to-transparent px-4 py-3 text-left shadow-lg shadow-sky-500/10 transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-500/60 hover:shadow-xl hover:shadow-sky-500/20 motion-safe:hover:scale-[1.01]">
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.2),transparent_45%)] opacity-70 transition-opacity duration-300 group-hover:opacity-100" />
@@ -142,6 +158,7 @@ export default function Home() {
               </CardHeader>
               <CardContent className="space-y-3 text-sm text-muted-foreground">
                 <p>Fullstack blogg med auth, kommentarer och realtime-flöden byggd med Next.js och Convex.</p>
+                <p className="text-xs"><strong className="text-foreground">Resultat:</strong> Implementerade komplett auth-flöde och kommentarsfunktion med stabil deploy på Vercel.</p>
                 <div className="flex flex-wrap gap-2 text-xs">
                   <span className="rounded-full border px-2 py-1">Next.js</span>
                   <span className="rounded-full border px-2 py-1">Convex</span>
@@ -169,6 +186,7 @@ export default function Home() {
               </CardHeader>
               <CardContent className="space-y-3 text-sm text-muted-foreground">
                 <p>Booking-system för cateringservice från min LIA-period. Full-stack lösning med databas och användarhantering.</p>
+                <p className="text-xs"><strong className="text-foreground">Resultat:</strong> Levererade bokningsflöde från formulär till lagring i databas med fokus på tydlig användarupplevelse.</p>
                 <div className="flex flex-wrap gap-2 text-xs">
                   <span className="rounded-full border px-2 py-1">HTML/CSS</span>
                   <span className="rounded-full border px-2 py-1">JavaScript</span>
@@ -196,6 +214,7 @@ export default function Home() {
               </CardHeader>
               <CardContent className="space-y-3 text-sm text-muted-foreground">
                 <p>Crypto dashboard i React med API-data, filtrering och tydlig visualisering av marknadsdata.</p>
+                <p className="text-xs"><strong className="text-foreground">Resultat:</strong> Byggde dynamisk listning med sök/filter och förbättrade överblick av realtidsdata i UI.</p>
                 <div className="flex flex-wrap gap-2 text-xs">
                   <span className="rounded-full border px-2 py-1">React</span>
                   <span className="rounded-full border px-2 py-1">API</span>
@@ -223,6 +242,7 @@ export default function Home() {
               </CardHeader>
               <CardContent className="space-y-3 text-sm text-muted-foreground">
                 <p>Snabb utility-app för att generera QR-koder med fokus på enkel UX och ren frontendstruktur.</p>
+                <p className="text-xs"><strong className="text-foreground">Resultat:</strong> Levererade enkel och snabb QR-generering med tydlig input/output och responsivt gränssnitt.</p>
                 <div className="flex flex-wrap gap-2 text-xs">
                   <span className="rounded-full border px-2 py-1">JavaScript</span>
                   <span className="rounded-full border px-2 py-1">CSS</span>
