@@ -368,56 +368,87 @@ export default function Home() {
             <div className="rounded-2xl border bg-card p-6 shadow-sm lg:col-span-2">
               <p className="text-sm font-medium text-primary">Om mig</p>
               <h3 className="mt-2 text-2xl font-bold tracking-tight">Ilya Fredriksson</h3>
-              <p className="mt-3 text-muted-foreground">
-                Frontendutvecklare i Järfälla med fokus på webbsäkerhet,
-                användarvänliga gränssnitt och moderna JavaScript-ramverk.
-              </p>
-
-              <div className="mt-4 grid gap-2 text-sm text-muted-foreground sm:grid-cols-2">
-                <p>• Stark i samarbete och kommunikation i team</p>
-                <p>• Van att lösa problem strukturerat under tidspress</p>
-                <p>• Erfarenhet av Git/GitHub och agila arbetssätt</p>
-                <p>• Fokus på säkerhet, kvalitet och användarvänlighet</p>
-              </div>
-
-              <div className="mt-4 rounded-xl border p-4 text-sm text-muted-foreground">
-                <p className="font-medium text-foreground">Tidigare arbetslivserfarenhet</p>
-                <p className="mt-1">
-                  Flerårig erfarenhet från vård och industri har gett mig stark ansvarskänsla,
-                  tydlig kommunikation och förmåga att arbeta lugnt och strukturerat även i högt tempo.
+              
+              <div className="mt-4 space-y-3 rounded-xl border border-primary/20 bg-primary/5 p-4">
+                <p className="text-sm font-medium text-foreground">Varför anställa mig?</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Jag är en driven juniorutvecklare som inte bara kodar—jag bygger med fokus på 
+                  <strong className="text-foreground"> säkerhet, prestanda och användarupplevelse</strong>. 
+                  Med bakgrund från vård och industri förstår jag vikten av ansvar och kvalitet. 
+                  Jag lär mig snabbt, arbetar strukturerat under tidspress och kommunicerar tydligt 
+                  med teamet.
                 </p>
               </div>
 
-              <div className="mt-6 space-y-3 rounded-xl border p-4">
-                <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Resa hittills</p>
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1 size-2 rounded-full bg-primary" />
-                    <span><strong>Byggt</strong> komponenter, formulär och API-kopplingar i skarpa projekt.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1 size-2 rounded-full bg-primary" />
-                    <span><strong>Fördjupat</strong> kunskap i säker autentisering och vanliga webbhot.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="mt-1 size-2 rounded-full bg-primary" />
-                    <span><strong>Arbetat</strong> agilt med Git/GitHub och kontinuerlig förbättring.</span>
-                  </li>
-                </ul>
+              <div className="mt-6 space-y-3">
+                <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Min väg till frontend</p>
+                
+                <div className="space-y-3">
+                  <div className="flex gap-4">
+                    <div className="flex flex-col items-center gap-2">
+                      <div className="flex size-8 items-center justify-center rounded-full bg-primary/20 text-xs font-bold text-primary">1</div>
+                      <div className="hidden sm:block h-12 w-px bg-primary/20" />
+                    </div>
+                    <div className="pb-2">
+                      <p className="font-semibold text-foreground">Tidigare yrken (vård & industri)</p>
+                      <p className="text-sm text-muted-foreground">
+                        Lärt mig struktur, ansvar och hur man löser problem under tidspress.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4">
+                    <div className="flex flex-col items-center gap-2">
+                      <div className="flex size-8 items-center justify-center rounded-full bg-primary/20 text-xs font-bold text-primary">2</div>
+                      <div className="hidden sm:block h-12 w-px bg-primary/20" />
+                    </div>
+                    <div className="pb-2">
+                      <p className="font-semibold text-foreground">Kodningsutbildning & LIA</p>
+                      <p className="text-sm text-muted-foreground">
+                        Genomförde intensiv webbutvecklingsutbildning, byggt Boka Catering för verklig kund under LIA-period.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4">
+                    <div className="flex flex-col items-center gap-2">
+                      <div className="flex size-8 items-center justify-center rounded-full bg-primary/20 text-xs font-bold text-primary">3</div>
+                      <div className="hidden sm:block h-12 w-px bg-primary/20" />
+                    </div>
+                    <div className="pb-2">
+                      <p className="font-semibold text-foreground">Fullstack projekt & säkerhet</p>
+                      <p className="text-sm text-muted-foreground">
+                        Byggt blogg med auth, Crypto dashboard, QR-generator. Fördjupat säkerhetskunnande.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4">
+                    <div className="flex flex-col items-center gap-2">
+                      <div className="flex size-8 items-center justify-center rounded-full bg-green-500/20 text-xs font-bold text-green-700 dark:text-green-400">✓</div>
+                    </div>
+                    <div className="pb-2">
+                      <p className="font-semibold text-foreground">Redo för nya utmaningar</p>
+                      <p className="text-sm text-muted-foreground">
+                        Söker juniorroll där jag kan växa i ett engagerat team. Erbjuder dedikation, lärvilja och säkerhetstänk.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div className="mt-6 grid gap-3 sm:grid-cols-3">
                 <div className="rounded-xl border p-4 transition-colors hover:bg-muted/40">
-                  <p className="text-xs text-muted-foreground">Fokus</p>
-                  <p className="mt-1 font-semibold">Frontend + säkerhet</p>
+                  <p className="text-xs text-muted-foreground">Min styrka</p>
+                  <p className="mt-1 font-semibold">Frontend + Säkerhet</p>
                 </div>
                 <div className="rounded-xl border p-4 transition-colors hover:bg-muted/40">
-                  <p className="text-xs text-muted-foreground">Teknik</p>
-                  <p className="mt-1 font-semibold">React / Next.js / Node</p>
+                  <p className="text-xs text-muted-foreground">Tech Stack</p>
+                  <p className="mt-1 font-semibold">React, Next.js, Node</p>
                 </div>
                 <div className="rounded-xl border p-4 transition-colors hover:bg-muted/40">
-                  <p className="text-xs text-muted-foreground">Arbetssätt</p>
-                  <p className="mt-1 font-semibold">Agile / Scrum / Jira</p>
+                  <p className="text-xs text-muted-foreground">Min approach</p>
+                  <p className="mt-1 font-semibold">Agile, Git, Teamwork</p>
                 </div>
               </div>
             </div>
